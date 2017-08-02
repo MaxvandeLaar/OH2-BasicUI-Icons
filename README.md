@@ -12,8 +12,8 @@ Currently only Font-awesome and Material Icons are supported
 Icons can be defined as "[$vender $iconClass]"
 
 Vendors are:
-fa (font-awesome)
-md (Material Icons)
+* fa (Font-Awesome)
+* md (Material Icons)
 
 #### &nbsp;&nbsp;&nbsp;Example:
   ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Normally
