@@ -1,0 +1,22 @@
+<script type="text/javascript">
+function addStyleSheet(filename) {
+    var head = window.parent.document.head;
+    var link = window.parent.document.createElement('link');
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+    link.href = filename;
+    head.appendChild(link);
+}
+
+function editButtons(){
+    var buttons = window.parent.document.querySelectorAll("button");
+    for (var i = 0; i < buttons.length; i++){
+        buttons[i].innerHTML = buttons[i].innerHTML.replace(/\[(fa .*)\]/g, '<i class="$1"></i>');
+        buttons[i].innerHTML = buttons[i].innerHTML.replace(/\[md (.*)\]/g, '<i class="material-icons" style="margin-top:6px;">$1</i>');
+    }
+}
+
+addStyleSheet("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+addStyleSheet("https://fonts.googleapis.com/icon?family=Material+Icons");
+editButtons();
+</script>
